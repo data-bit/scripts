@@ -1,0 +1,16 @@
+# MONTE CARLO SIM
+# -------------------------------------
+# - combinatorics
+# - inferencial statistics
+
+class FairRoulette():
+	def __init__(self):
+		self.pockets = []
+		for i in range (1, 37):
+			self.pockets.append(i)
+		self.ball = none
+		self.pocketOdds = len(self.pockets) - 1
+
+	def spin(self):
+		self.ball = random.choice(self.pockets)
+		

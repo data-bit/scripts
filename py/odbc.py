@@ -10,10 +10,10 @@ import pyodbc
 
 class odbc:
   def __init__(self, server, database):
-    self.server = server or 'EFDVWDDBSSQL16.hca.corpad.net'
-    self.database = database or 'EDW_ADHOC'
-    self.uid = 'HCA\EFDVSVC_APP_BI'
-    self.pwd = 'y2NxCgG3'
+    self.server = server or ''
+    self.database = database or ''
+    self.uid = ''
+    self.pwd = ''
 
   def connection(self):
     return 'DRIVER={ODBC Driver 17 for SQL Server};SERVER='+self.server+';DATABASE='+self.database+';UID='+self.uid+';PWD='+ self.pwd +';Trusted_connection=yes'

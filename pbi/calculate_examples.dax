@@ -1,0 +1,52 @@
+https://www.sqlbi.com/articles/specifying-multiple-filter-conditions-in-calculate/
+
+=======================================================================================
+
+Contoso Sales :=
+CALCULATE (
+    [Sales Amount],
+    'Product'[Color] = "Red" || 'Product'[Brand] = "Contoso"
+)
+
+=======================================================================================
+
+Big Sales Amount :=
+CALCULATE (
+    [Sales Amount],
+    KEEPFILTERS ( Sales[Quantity] * Sales[Net Price] > 1000 )
+)
+
+=======================================================================================
+
+Big Sales Amount Overrides Filter :=
+CALCULATE (
+    [Sales Amount],
+    FILTER (
+        ALL ( Sales[Quantity], Sales[Net Price] ),
+        Sales[Quantity] * Sales[Net Price] > 1000
+    )
+)
+
+=======================================================================================
+
+DEFINE
+    MEASURE Sales[Big Sales Amount] =
+        CALCULATE (
+            [Sales Amount],
+            KEEPFILTERS ( Sales[Quantity] * Sales[Net Price] > 1000 )
+        )
+    MEASURE Sales[Big Sales Amount Overrides Filter] =
+        CALCULATE (
+            [Sales Amount],
+            Sales[Quantity] * Sales[Net Price] > 1000
+        )
+EVALUATE
+SUMMARIZECOLUMNS (
+    Sales[Quantity],
+    "Sales Amount", [Sales Amount],
+    "Big Sales Amount", [Big Sales Amount],
+    "Big Sales Amount Overrides Filter", [Big Sales Amount Overrides Filter]
+)
+
+=======================================================================================
+
