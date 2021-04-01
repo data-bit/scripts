@@ -1,0 +1,6 @@
+https://www.red-gate.com/simple-talk/sql/bi/using-calendars-and-dates-in-power-bi/
+
+
+https://www.sqlbi.com/articles/specifying-multiple-filter-conditions-in-calculate/
+
+
