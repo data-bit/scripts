@@ -1,3 +1,13 @@
+# ==================================================================================
+# AZURE QnA API EXAMPLE
+# ==================================================================================
+#    POST /knowledgebases/3fa82422-da5c-4a9a-b8d7-5d0f89d72cbb/generateAnswer
+#    Host: https://qnamakermsft.azurewebsites.net/qnamaker
+#    Authorization: EndpointKey 9df9246f-2798-47e5-83b0-2d5f8fdda8c4
+#    Content-Type: application/json
+#    {"question":"<Your question>"}
+
+
 import requests
 from requests.structures import CaseInsensitiveDict
 
