@@ -14,7 +14,7 @@ using Newtonsoft.Json;
     Authorization: EndpointKey 9df9246f-2798-47e5-83b0-2d5f8fdda8c4
     Content-Type: application/json
     {"question":"<Your question>"}
-*/
+*/ 
 
 
 namespace CSHttpClientSample
