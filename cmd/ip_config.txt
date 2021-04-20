@@ -1,0 +1,16 @@
+ipconfig [/allcompartments] [/all] [/renew [<Adapter>]] [/release [<Adapter>]] [/renew6[<Adapter>]] [/release6 [<Adapter>]] [/flushdns] [/displaydns] [/registerdns] [/showclassid <Adapter>] [/setclassid <Adapter> [<ClassID>]]>
+
+Parameter	    Description
+/all	        Display the full TCP/IP configuration information for all network adapters.
+/release	    Release the IPv4 address for the specified adapter.
+/release6	    Release the IPv6 address for the specified adapter.
+/renew	        Renew the IPv4 address for the specified adapter.
+/renew6	        Renew the IPv6 address for the specified adapter.
+/flushdns	    Purges the DNS Resolver cache.
+/registerdns	Refreshes all DHCP leases and re-registers DNS names.
+/displaydns	    Display the contents of the DNS Resolver Cache.
+/showclassid	Displays all the DHCP class IDs allowed for adapter.
+/setclassid	    Modifies the DHCP class ID.
+/showclassid6	Displays all the IPv6 DHCP class IDs allowed for adapter.
+/setclassid6	Modifies the IPv6 DHCP class ID.
+/?	            Displays help information.

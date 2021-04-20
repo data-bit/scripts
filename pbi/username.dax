@@ -1,0 +1,4 @@
+Username = 
+VAR user = SUBSTITUTE(SUBSTITUTE(UPPER(USERNAME()),"DOMAIN\",""),"@DOMAIN","")
+VAR prefix = ""
+RETURN CONCATENATE(prefix,user)
