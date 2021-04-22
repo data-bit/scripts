@@ -1,0 +1,11 @@
+// Check user logged in a specific server
+query user /server:SERVENAME
+
+//open rdp
+mstsc
+
+// check ip from dns
+nslookup wikipedia.org
+
+// A, CNAME, MX, PTR, NS, ANY
+nslookup -type=cname wikipedia.org
