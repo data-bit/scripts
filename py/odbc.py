@@ -1,5 +1,5 @@
 # =====================================================================================================================================
-# AUTHOR:   Mitch Alves (idp7116)
+# AUTHOR:   Mitch Alves 
 # DATE:     2021-02-23
 # DESC:     APP EXECUTION - QUERY DB
 # DRIVERS:  https://docs.microsoft.com/en-us/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver15
